@@ -1,0 +1,11 @@
+n=int(input())
+arr=list(map(int, input().split()))
+found=False
+for i in range(n-1):
+    if arr[i]<arr[i+1]:
+        found=True
+        break
+if found:
+    print("Sorted")
+else:
+    print("Not Sorted")
