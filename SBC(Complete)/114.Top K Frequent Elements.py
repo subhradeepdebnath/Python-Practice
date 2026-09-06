@@ -12,7 +12,6 @@ def func(arr,k):
     a.sort(reverse=True)
     for i in range(k):
         print(a[i][1],end=" ")
-
 arr=list(map(int,input().split()))
 k=int(input())
 func(arr,k)
