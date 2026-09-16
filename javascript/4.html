@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3</title>
+    <style>
+        .normal-box{
+            width: 200px;
+            height: 50px;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        .highlight-box {
+            width: 200px;
+            height: 50px;
+            background-color: #71E5F4;
+            border: 3px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="normal-box">main ek box hu</div>
+    <button onclick="swapClass()">Swap Class</button>
+    
+    <script>
+        function swapClass(){
+            const divElement=document.getElementById("myDiv")
+            divElement.className = "highlight-box";
+        }
+    </script>
+</body>
+</html>
