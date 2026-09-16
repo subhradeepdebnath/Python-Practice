@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .p{
+
+    }
+    .change{
+        border :dashed;
+        background-color: blue;
+    }
+</style>
+</head>
+
+<body> 
+    <p id="p" class="p">This a paragraph</p>
+    <button id="mybtn" style="width:120px;">Click </button>
+    
+    <script>
+        const btn=document.getElementById("mybtn");
+        const para=document.getElementById("p");
+        btn.addEventListener("click", function(){
+            para.className="change";
+        });
+    </script>
+
+</body>
+</html>
