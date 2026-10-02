@@ -1,6 +1,6 @@
 def func(s,target):
     for i in range(len(s)):
-        if target in s[i:i+len(target)]:
+        if s[i:i+len(target)]==target:
             print(i)
             return
     print(-1)
