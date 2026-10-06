@@ -6,11 +6,11 @@ def func(arr):
         c= arr//2
         arr=c
     a.reverse()
-    rev=0
-    for i in a:
-        rev=rev*10+i
-    print(rev)
-    
+    # rev=0
+    # for i in a:
+    #     rev=rev*10+i
+    # print(rev)
+    print(*a,sep="")
     
 arr=int(input())
 func(arr)
